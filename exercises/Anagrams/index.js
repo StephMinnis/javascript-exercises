@@ -13,7 +13,11 @@
  */
 
 function anagrams(stringA, stringB) {
-
+    let arr1 = stringA.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('');
+    let arr2 = stringB.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('');
+    
+      return arr1 === arr2;
+    
 }
 
 module.exports = anagrams;
